@@ -43,6 +43,15 @@ fn main() {
             is_sudo = true;
         }
     }
+    if args.len() == 1 || args.iter().any(|&s| s == "-h" || s == "--help") {
+        match rm(is_sudo, &["-h"]) {
+            Ok(_) => {}
+            Err(e) => {
+                println!("{}", e);
+            }
+        }
+        return;
+    }
     println!("Are you sure you want to run this command?");
     if is_sudo {
         println!("Command: sudo rm {}", args[1..].join(" "));
