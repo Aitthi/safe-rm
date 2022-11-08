@@ -1,16 +1,16 @@
 # Safe rm
-safe-rm is a simple wrapper around rm that prevents you from accidentally deleting files.
+saferm is a simple wrapper around rm that prevents you from accidentally deleting files.
 
 ## Installation
 ```bash
-cargo install safe-rm
+cargo install saferm
 ```
 ## Usage
 ```bash
-safe-rm [FLAGS] [OPTIONS] <FILE>...
+saferm [FLAGS] [OPTIONS] <FILE>...
 ```
 
 ## Alias in .bashrc or .zshrc etc.
 ```bash
-alias rm="safe-rm"
+alias rm="saferm"
 ```

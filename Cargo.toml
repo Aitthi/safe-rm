@@ -1,10 +1,10 @@
 [package]
-name = "safe-rm"
+name = "saferm"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
 authors = ["Aitthi"]
-description = "safe-rm is a simple wrapper around rm that prevents you from accidentally deleting files."
+description = "saferm is a simple wrapper around rm that prevents you from accidentally deleting files."
 categories = ["command", "bin"]
 keywords = ["command", "bin", "rm", "safe"]
 repository = "https://github.com/Aitthi/safe-rm"
@@ -13,7 +13,7 @@ readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
-name = "safe-rm"
+name = "saferm"
 path = "src/main.rs"
 
 [dependencies]
