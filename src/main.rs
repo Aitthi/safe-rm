@@ -43,7 +43,8 @@ fn main() {
             is_sudo = true;
         }
     }
-    if args.iter().any(|&s| s == "-h" || s == "--help") {
+    // println!("len: {}", args.len());
+    if args.len() == 1 || args.iter().any(|&s| s == "-h" || s == "--help") {
         match rm(is_sudo, &["--help"]) {
             Ok(_) => {}
             Err(e) => {
